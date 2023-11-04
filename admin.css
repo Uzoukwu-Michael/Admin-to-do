@@ -1,0 +1,145 @@
+:root{
+  --secondary-color: #176b87;
+  --primary-color: #04364a;
+  --accent-color: #dafffb;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+body{
+  background-color: var(--accent-color);
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+header{
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+#todosDiv{
+display: flex;
+flex-direction: column;
+background-color: var(--accent-color);
+margin: 10px; 
+padding: 10px;
+display: none;
+}
+.cover{
+  display: flex;
+  justify-content: space-between;
+}
+#usersDiv{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color); 
+  margin: 10px; 
+  padding: 10px;
+  display: none;
+}
+.first{
+  display: flex;
+  justify-content: space-between;
+}
+#cards{
+  display: flex;
+}
+#todoCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  margin-top: 100px;
+  margin-left: 50px;
+  background-color: var(--secondary-color);
+}
+#head{
+  display: flex;
+  justify-content: space-between;
+}
+span{
+  /* color: var(--accent-color); */
+  font-size: 20px;
+}
+#spanHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+li{
+  display: flex;
+  justify-content: space-between;
+}
+#userCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  margin-top: 100px;
+  margin-left: 50px;
+  background-color: var(--secondary-color);
+}
+
+#addUser{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--accent-color);
+  border-radius: 12px;
+  margin-bottom: 200px;
+  padding: 15px;
+  display: none;
+}
+#createUserButton{
+  padding: 2px;
+color: var(--accent-color);
+font-size: 19px;
+background-color: var(--primary-color);
+margin: 2px;
+width: 100px;
+font-weight: 60px;
+border-radius: 5px;
+border: 1px solid var(--accent-color);
+}
+button{
+  padding: 2px;
+color: var(--accent-color);
+font-size: 19px;
+background-color: var(--primary-color);
+margin: 2px;
+width: 100px;
+font-weight: 60px;
+border-radius: 5px;
+border: 1px solid var(--accent-color);
+}
+button:hover{
+  cursor: pointer;
+}
+h1{
+  padding: 3px;
+  margin: 5px;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  margin: 20px;
+  padding: 20px;
+  height: 100%;
+  width: 600px;
+  border-radius: 12px;
+}

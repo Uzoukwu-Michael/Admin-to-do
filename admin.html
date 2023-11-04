@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div id="container">
+<header>
+    <div class="first">
+      <div id="head">
+        <div >
+      <h1>TODO Admin</h1>
+      <button>Login</button>
+        </div>
+      </div>
+      </div>
+</header>
+<hr>
+<form id="addUserForm">
+<div id="addUser">
+  <h1>Create User</h1>
+  <input id="name" type="text" placeholder="name" required autocomplete="name">
+  <input id="email" type="email" placeholder="email" required autocomplete="email">
+  <input id="password"  type="password" placeholder="password" required autocomplete="current-password">
+  <button id="createUserButton" onclick="createUser()">Create User</button>
+</div>
+</form>
+<div id="cards">
+<section>
+  <div id="userCard" >
+    <h1>Users</h1>
+    <div >
+   <span id="number"></span><span> Users</span>
+  </div>
+  </div>
+</section>
+<section>
+  <div id="todoCard" >
+    <h1>Todos</h1>
+    <div>
+   <span id="todoNumber"></span><span> Todos</span>
+
+  </div>
+  </div>
+</section>
+</div>
+  <div id="usersDiv">
+    <div class="cover">
+    <h1>Users</h1>
+      <button id="showAddUserFormBtn" onclick="">Add User</button>
+    </div>
+  <div>
+    <ul id="showUserList">
+
+    </ul>
+  </div>
+  </div>
+  <div id="todosDiv">
+    <div class="cover">
+   <h1>Todos</h1>
+      <button>Add Todo</button>
+    </div>
+    <div>
+      <div id="spanHeader">
+        <span>S/N</span>
+        <span>User</span>
+        <span>US/N</span>
+        <span>Todos</span>
+        <span>IsCompleted</span>
+        <span>Operations</span>
+        
+    
+      </div>
+      <ul id="showTodoList">
+      </ul>
+    </div>
+  </div>
+</div>
+  <script src="main.js"></script>
+<script src="admin.js">
+//  const anArray = ['obi1',
+//     'peter1',
+//     'nkem1',
+//     'obi2',
+//     'peter2',
+//     'nkem2',
+//     'obi3',
+//     'nkem3',
+//     'peter3',
+//     'obi4',
+//     'peter4'
+// ];
+
+// let strings = 'abcdefgh';
+// console.log(strings.search('ij'));
+
+// function searchTodos() {
+//   let input = document.getElementById('todoInput').value;
+//   const filtered = anArray.filter(item => item.search(input) != -1)
+// console.log(filtered)
+// }
+</script>
+</body>
+</html>
